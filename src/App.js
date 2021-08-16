@@ -1,22 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import ProfileComponent from "./profile/profileComponent";
 
 function App() {
+  const handleName = (name) => {
+    alert(`Hi it s ${name}`);
+  };
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+        <ProfileComponent
+          profession="Full Stack Web Developer"
+          bio="Highly competent Full-Stack web developer helping clients create, design Websites and remake
+existing sites according to their willing...Proven ability data scientist to gain the clients trust ."
+          handleName={handleName}
         >
-          Learn React
-        </a>
+          <img src="./assets/avatar.jpg" alt="profilePic" width="100" />
+        </ProfileComponent>
       </header>
     </div>
   );

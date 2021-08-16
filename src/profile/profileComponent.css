@@ -1,0 +1,48 @@
+.profile {
+  display: flex;
+  width: 100%;
+  background-color: #e6e6ff;
+  border-radius: 5px;
+  width: 85%;
+  height: 500px;
+  color: black;
+  font-size: 15px;
+  text-align: left;
+  font-style: oblique;
+  font-weight: bolder;
+  position: relative;
+}
+
+.image img {
+  margin-top: 10%;
+  margin-left: 10%;
+  border-radius: 50px;
+}
+.image {
+  height: min-content;
+}
+
+.info {
+  margin-left: 5%;
+  margin-top: 1%;
+  margin-right: 7%;
+  text-align: justify;
+}
+
+.bio {
+  display: flex;
+}
+
+.button {
+  background-color: #00001a;
+  color: #e6e6ff;
+  border-radius: 10px;
+  padding: 1%;
+  /* bottom: 5%; */
+  left: 3%;
+  position: absolute;
+}
+
+.button:hover {
+  opacity: 0.9;
+}
